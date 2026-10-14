@@ -17,6 +17,17 @@ git tag                        # released versions
 Releases 0.11.1 through 0.13.9 are recorded only in `debian/changelog`; this
 list is a summary and is not kept for every release.
 
+### 0.13.11
+- **Add**: Arcade activity lanes. While a training run, a model load or a model
+  serving is active, the top starfield rows show up to two lanes (name,
+  progress, rate, `[t]`/`[i]` to open the full view); the stars tint by kind and
+  flare per step or request.
+- **Add**: an atmosphere behind the Inference view's snake: a forge while
+  loading, a storm while a prompt is read, an aurora with comets, rain and a
+  KV-cache tide while generating, a forming canvas for diffusion jobs.
+- **Fix**: models launched from a weights path are labelled by their run
+  (`rag-gate-27b`), not `model-dir` or `bundle`.
+
 ### 0.13.10
 - **Add**: Inference view (`i`) shows the port and chips each model runs on,
   for example `:8000 · chips 0,1`, on each roster row or in a header line for a
