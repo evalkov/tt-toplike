@@ -17,6 +17,10 @@ git tag                        # released versions
 Releases 0.11.1 through 0.13.9 are recorded only in `debian/changelog`; this
 list is a summary and is not kept for every release.
 
+### 0.13.12
+- **Fix**: a model server with no `/health` route (the MiniMax-Music3 audio
+  server) shows as serving. The Inference view also asks `/v1/health`.
+
 ### 0.13.11
 - **Add**: Arcade activity lanes. While a training run, a model load or a model
   serving is active, the top starfield rows show up to two lanes (name,
